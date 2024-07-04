@@ -1,0 +1,66 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  color: #333;
+}
+
+#apprenant-details {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 50%;
+  text-align: left;
+}
+
+#apprenant-details img {
+  display: block;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+}
+
+#apprenant-details ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#apprenant-details ul li {
+  margin-bottom: 10px;
+}
+
+#apprenant-details ul li strong {
+  color: #007bff;
+}
+
+#apprenant-details ol {
+  list-style-type: decimal;
+  margin: 0;
+  padding-left: 20px;
+}
+
+#apprenant-details p {
+  margin-top: 20px;
+}
+
+a {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: #218838;
+}

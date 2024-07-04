@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/ajout-apprenant.css" />
+    <title>Ajouter un Apprenant</title>
+  </head>
+  <body class="container">
+    <h1 class="title">Ajouter un Apprenant</h1>
+    <form
+      action="lister-apprenants.html"
+      method="post"
+      target="_blank"
+      id="apprenantForm"
+    >
+      <div class="form-group">
+        <label for="Photo">Photo:</label>
+        <input type="file" id="Photo" name="Photo" required />
+      </div>
+      <div class="form-group">
+        <label for="prenom">Prénom:</label>
+        <input type="text" id="prenom" name="prenom" required />
+      </div>
+      <div class="form-group">
+        <label for="nom">Nom:</label>
+        <input type="text" id="nom" name="nom" required />
+      </div>
+      <div class="form-group">
+        <label for="sexe">Sexe:</label>
+        <select id="sexe" name="sexe" required>
+          <option value="masculin">Masculin</option>
+          <option value="feminin">Féminin</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="pays">Pays d'origine:</label>
+        <input type="text" id="pays" name="pays" required />
+      </div>
+      <div class="form-group">
+        <label for="modules">Modules :</label>
+        <select id="modules" name="modules" multiple required>
+          <option value="cloud">Cloud</option>
+          <option value="securite">Sécurité</option>
+          <option value="aws">AWS</option>
+          <option value="dev-web">Dev-Web</option>
+          <option value="base_de_donnees">Base de données</option>
+          <option value="devops">DevOps</option>
+          <option value="programmation">Programmation</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="motivation">Motivation:</label>
+        <textarea
+          id="motivation"
+          name="motivation"
+          rows="4"
+          cols="50"
+          required
+        ></textarea>
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Ajouter" />
+      </div>
+    </form>
+    <br />
+    <a href="lister-apprenants.html">Retour à la liste des apprenants</a>
+  </body>
+</html>

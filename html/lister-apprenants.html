@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/list-apprenant.css" />
+    <title>Liste des Apprenants</title>
+  </head>
+  <body>
+    <div id="header-placeholder"></div>
+    <div class="content-wrapper">
+      <h1 class="list-learner">Liste des Apprenants</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Prénom</th>
+            <th>Nom</th>
+            <th>Action</th>
+            <th>Détail/Supprimer</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Sop</td>
+            <td>Dia</td>
+            <td>Apprenante</td>
+            <td class="details">
+              <a href="detailler-apprenant.html#sop-dia">Détails</a>
+              <button
+                onclick="return confirm('Êtes-vous sûr de vouloir supprimer cet apprenant?')"
+              >
+                Supprimer
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>Soulayemane</td>
+            <td>Hanne</td>
+            <td>Apprenant</td>
+            <td class="details">
+              <a href="detailler-apprenant.html#soulayemane-hanne">Détails</a>
+              <button
+                onclick="return confirm('Êtes-vous sûr de vouloir supprimer cet apprenant?')"
+              >
+                Supprimer
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>Ngone</td>
+            <td>Niang</td>
+            <td>Apprenante</td>
+            <td class="details">
+              <a href="detailler-apprenant.html#Ngone-Niang">Détails</a>
+              <button
+                onclick="return confirm('Êtes-vous sûr de vouloir supprimer cet apprenant?')"
+              >
+                Supprimer
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>Amadou</td>
+            <td>Ndiaye</td>
+            <td>Apprenant</td>
+            <td class="details">
+              <a href="detailler-apprenant.html#Amadou-Ndiaye">Détails</a>
+              <button
+                onclick="return confirm('Êtes-vous sûr de vouloir supprimer cet apprenant?')"
+              >
+                Supprimer
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <a href="ajouter-apprenant.html">Ajouter un nouvel apprenant</a>
+    </div>
+    <div id="footer-placeholder"></div>
+
+    <script>
+      // Load the header
+      fetch("../html/header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header-placeholder").innerHTML = data;
+        });
+
+      // Load the footer
+      fetch("../html/footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+    </script>
+  </body>
+</html>
